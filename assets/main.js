@@ -21,6 +21,15 @@ let userAge = document.getElementById('yrs');
 console.log(userName, userDistance, userAge);
 
 // funzioni random per carrozza e codice cp da richiamare dentro l'evento
+function randomSeat() {
+    let seat = Math.floor((Math.random() * 20) +1);
+    document.getElementById('out-random-1').innerHTML = seat;
+}
+
+function randomId() {
+    let codex = Math.floor((Math.random() * 99999) + 11111);
+    document.getElementById('out-random-1').innerHTML = codex;
+}
 
 // evento per premuta tasto
 formElement.addEventListener('submit', (e) => {

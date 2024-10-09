@@ -14,23 +14,33 @@ console.log('im alive');
 
 // dichiarazione variabili
 let basePrice;
-let form_element = document.querySelector('form');
-let name = document.getElementById('name-surname');
-let distance = document.getElementById('kms');
-let age = document.getElementById('yrs');
-console.log(name, distance, age);
+let formElement = document.querySelector('form');
+let userName = document.getElementById('name-surname');
+let userDistance = document.getElementById('kms');
+let userAge = document.getElementById('yrs');
+console.log(userName, userDistance, userAge);
 
 // funzione:
-// calcolo prezzo per km, da mettere in una funzione
-basePrice = distance * 0.21;
 
 // evento per premuta tasto
-form_element.addEventListener('submit', (e) => {
+formElement.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    // dichiarazione variabili con evento
-    const inputName = e.target.name-surname.value;
-    const inputDistance = e.target.kms.value;
-    const inputAge = e.target.yrs.value;
-    console.log(inputName, inputAge, inputDistance);
+    // dichiarazione variabili di valore input
+    const inputName = userName.value;
+    const inputDistance = userDistance.value;
+    const inputAge = userAge.value;
+    
+    // calcolo prezzo per km, da mettere in una funzione
+    basePrice = inputDistance * 0.21;
+    
+    // applicazione sconto
+    if (inputAge < 18) {
+        basePrice = basePrice - (basePrice * 0.2);
+    }
+    else if (inputAge >= 65) {
+        basePrice = basePrice - (basePrice * 0.4);
+    }
+    
+    console.log(inputName, inputAge, inputDistance, basePrice);
 })

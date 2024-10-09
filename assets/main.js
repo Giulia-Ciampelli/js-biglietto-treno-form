@@ -1,8 +1,5 @@
 console.log('im alive');
 
-const form_element = document.querySelector('form');
-console.log(form_element);
-
 // cosa c'è in più dell'es di prima?
 // output di tutti i dati del form
 // tipo di prezzo
@@ -17,7 +14,7 @@ console.log(form_element);
 
 // dichiarazione variabili
 let basePrice;
-let formElement = document.getElementById('form');
+let form_element = document.querySelector('form');
 let name = document.getElementById('name-surname');
 let distance = document.getElementById('kms');
 let age = document.getElementById('yrs');
@@ -28,10 +25,12 @@ console.log(name, distance, age);
 basePrice = distance * 0.21;
 
 // evento per premuta tasto
-
-
-// dichiarazione variabili con evento
-const inputName = e.target.name-surname.value;
-const inputDistance = e.target.kms.value;
-const inputAge = e.target.yrs.value;
-console.log(inputName, inputAge, inputDistance);
+form_element.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // dichiarazione variabili con evento
+    const inputName = e.target.name-surname.value;
+    const inputDistance = e.target.kms.value;
+    const inputAge = e.target.yrs.value;
+    console.log(inputName, inputAge, inputDistance);
+})

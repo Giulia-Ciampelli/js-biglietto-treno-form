@@ -57,6 +57,10 @@ formElement.addEventListener('submit', (e) => {
     }
     console.log(inputName, inputAge, inputDistance, basePrice);
 
+    // richiama le funzioni random
+    randomSeat();
+    randomId();
+
     // stampa nell'output
     document.getElementById('out-name').innerHTML = inputName;
     document.getElementById('out-price').innerHTML = `${basePrice.toFixed(2)}€`;

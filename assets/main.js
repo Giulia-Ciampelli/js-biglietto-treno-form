@@ -4,7 +4,6 @@ let formElement = document.querySelector('form');
 let userName = document.getElementById('name-surname');
 let userDistance = document.getElementById('kms');
 let userAge = document.getElementById('yrs');
-console.log(userName, userDistance, userAge);
 
 // funzioni random per carrozza e codice cp da richiamare dentro l'evento
 function randomSeat() {
@@ -41,7 +40,6 @@ formElement.addEventListener('submit', (e) => {
     else {
         document.getElementById('out-offer').innerHTML = 'Biglietto standard';
     }
-    console.log(inputName, inputAge, inputDistance, basePrice);
 
     // richiama le funzioni random
     randomSeat();

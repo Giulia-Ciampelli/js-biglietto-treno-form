@@ -11,12 +11,29 @@
     --font-colour: #011627;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--background-colour);
+}
+/* #endregion common */
+
+/* #region inputs */
 .container {
     width: 80%;
-    margin: auto;
 }
 
 .row {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 10% 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--font-colour) 0px 0px 20px 1px;
+    background-color: var(--container-colour);
 }
-/* #endregion common */
+/* #endregion inputs */

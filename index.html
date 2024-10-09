@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcolo prezzo treno</title>
+
+    <!-- link css -->
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <!-- #region input -->
+        <div class="row">
+            <form action="">
+                <label for="first-name">
+                    Nome
+                </label>
+                <input type="text" name="f-name" id="first-name">
+                <label for="last-name">
+                    Cognome
+                </label>
+                <input type="text" name="l-name" id="last-name">
+                <label for="kms">
+                    Km da percorrere
+                </label>
+                <input type="number" name="distance" id="kms">
+                <label for="yrs">
+                    Età
+                </label>
+                <input type="number" name="age" id="yrs">
+                <button type="submit" id="button">
+                    Genera prezzo
+                </button>
+            </form>
+        </div>
+        <!-- #endregion input -->
+
+        <!-- #region output -->
+        <div class="row">
+            <div class="output">
+            </div>
+        </div>
+        <!-- #endregion output -->
+    </div>
+
+    <!-- link js -->
     <script src="./assets/main.js"></script>
 </body>
+
 </html>

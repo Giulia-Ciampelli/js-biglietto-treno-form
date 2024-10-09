@@ -17,7 +17,21 @@ console.log(form_element);
 
 // dichiarazione variabili
 let basePrice;
-let firstName = document.getElementById('first-name');
-let lastName = document.getElementById('last-name');
+let formElement = document.getElementById('form');
+let name = document.getElementById('name-surname');
 let distance = document.getElementById('kms');
 let age = document.getElementById('yrs');
+console.log(name, distance, age);
+
+// funzione:
+// calcolo prezzo per km, da mettere in una funzione
+basePrice = distance * 0.21;
+
+// evento per premuta tasto
+
+
+// dichiarazione variabili con evento
+const inputName = e.target.name-surname.value;
+const inputDistance = e.target.kms.value;
+const inputAge = e.target.yrs.value;
+console.log(inputName, inputAge, inputDistance);

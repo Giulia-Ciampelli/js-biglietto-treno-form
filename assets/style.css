@@ -3,3 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* #region common */
+:root {
+    --background-colour: #13A3B5;
+    --container-colour: #E2EFDE;
+    --font-colour: #011627;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+/* #endregion common */

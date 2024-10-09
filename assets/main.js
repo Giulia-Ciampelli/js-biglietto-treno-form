@@ -1,17 +1,3 @@
-console.log('im alive');
-
-// cosa c'è in più dell'es di prima?
-// output di tutti i dati del form
-// tipo di prezzo
-// n° carrozza e codice cp (n° random, funzioni?)
-
-// passi:
-// collegare gli elementi del form e dell'output al file js
-// creare delle funzioni che prendano gli input del form
-// collegare gli eventi al click
-// calcolare i dati del form con una funzione
-// stampare nell'output (con document.getElementById('id')?)
-
 // dichiarazione variabili
 let basePrice;
 let formElement = document.querySelector('form');
@@ -28,7 +14,7 @@ function randomSeat() {
 
 function randomId() {
     let codex = Math.floor((Math.random() * 99999) + 11111);
-    document.getElementById('out-random-1').innerHTML = codex;
+    document.getElementById('out-random-2').innerHTML = codex;
 }
 
 // evento per premuta tasto

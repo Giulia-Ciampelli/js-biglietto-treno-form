@@ -21,30 +21,30 @@
         <!-- #region input -->
         <div class="row">
             <form action="" class="d-flex">
-                <div class="col-4 column my-1">
+                <div class="col-4 my-1">
                     <label for="name-surname">
                         Nome e Cognome
                     </label>
                     <input type="text" name="f-name" class="my-1" id="name-surname" required>
                 </div>
-                <div class="col-4 column my-1">
+                <div class="col-4 my-1">
                     <label for="kms">
                         Km da percorrere
                     </label>
                     <input type="number" min="0" name="distance" class="my-1" id="kms" required>
                 </div>
-                <div class="col-4 column my-1">
+                <div class="col-4 my-1">
                     <label for="yrs">
                         Età
                     </label>
                     <input type="number" min="0" name="age" class="my-1" id="yrs" required>
                 </div>
-                <div class="col-4 column my-1">
+                <div class="col-4 my-1">
                     <button type="submit" class="btn" id="button">
                         Genera prezzo
                     </button>
                 </div>
-                <div class="col-4 column my-1">
+                <div class="col-4 my-1">
                     <button type="reset" class="btn dark" id="button-reset">
                         Annulla
                     </button>
@@ -55,17 +55,42 @@
 
         <!-- #region output -->
         <div class="row d-none" id="result">
-            <div class="output">
-                <p id="out-name">
-                </p>
-                <p id="out-offer">
-                </p>
-                <p id="out-random-1">
-                </p>
-                <p id="out-random-2">
-                </p>
-                <p id="out-price">
-                </p>
+            <div class="d-flex">
+                <div class="col-2">
+                    <h3>
+                        Nome e Cognome
+                    </h3>
+                    <p class="my-1" id="out-name">
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h3>
+                        Biglietto
+                    </h3>
+                    <p class="my-1" id="out-offer">
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h3>
+                        Carrozza
+                    </h3>
+                    <p class="my-1" id="out-random-1">
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h3>
+                        Codice CP
+                    </h3>
+                    <p class="my-1" id="out-random-2">
+                    </p>
+                </div>
+                <div class="col-2">
+                    <h3>
+                        Prezzo
+                    </h3>
+                    <p class="my-1" id="out-price">
+                    </p>
+                </div>
             </div>
         </div>
         <!-- #endregion output -->

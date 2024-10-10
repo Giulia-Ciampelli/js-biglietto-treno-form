@@ -23,6 +23,10 @@ body {
 /* #endregion common */
 
 /* #region inputs */
+p {
+    text-align: center;
+}
+
 .container {
     width: 80%;
 }
@@ -47,14 +51,18 @@ body {
     align-content: center;
 }
 
-.column {
+.col-4 {
+    width: calc((100% / 12) * 4);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.col-4 {
-    width: calc((100% / 12) * 4);
+.col-2 {
+    width: calc((100% / 12) * 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .my-1 {

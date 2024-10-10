@@ -23,7 +23,7 @@ body {
 /* #endregion common */
 
 /* #region inputs */
-p {
+h1, p {
     text-align: center;
 }
 
@@ -32,7 +32,7 @@ p {
 }
 
 .row {
-    margin: 10% 0;
+    margin: 3rem 0;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: var(--font-colour) 0px 0px 20px 1px;
@@ -63,6 +63,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
 }
 
 .my-1 {

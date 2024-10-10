@@ -16,7 +16,9 @@ function randomNum(min, max) {
 // funzione per mostrare l'output al submit
 function classRemove(cl) {
     let output = document.getElementById('result');
+    let outputTitle = document.getElementById('result-title');
     output.classList.remove(cl);
+    outputTitle.classList.remove(cl);
 }
 // #endregion funzioni da richiamare dentro l'evento
 

@@ -12,6 +12,7 @@
 
 <body>
     <div class="container">
+
         <!-- #region input -->
         <div class="row">
             <form action="">
@@ -22,13 +23,16 @@
                 <label for="kms">
                     Km da percorrere
                 </label>
-                <input type="number" name="distance" id="kms" required>
+                <input type="number" min="0" name="distance" id="kms" required>
                 <label for="yrs">
                     Età
                 </label>
-                <input type="number" name="age" id="yrs" required>
+                <input type="number" min="0" name="age" id="yrs" required>
                 <button type="submit" id="button">
                     Genera prezzo
+                </button>
+                <button type="reset" id="button-reset">
+                    Annulla
                 </button>
             </form>
         </div>

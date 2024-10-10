@@ -8,21 +8,15 @@ let userAge = document.getElementById('yrs');
 
 // #region funzioni da richiamare dentro l'evento
 
-// funzioni random per carrozza e codice cp
-function randomSeat() {
-    let seat = Math.floor((Math.random() * 20) + 1);
-    document.getElementById('out-random-1').innerHTML = seat;
-}
-
-function randomId() {
-    let codex = Math.floor((Math.random() * 99999) + 11111);
-    document.getElementById('out-random-2').innerHTML = codex;
+// funzione random per carrozza e codice cp
+function randomNum(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
 // funzione per mostrare l'output al submit
-function classRemove() {
+function classRemove(cl) {
     let output = document.getElementById('result');
-    output.classList.remove('d-none');
+    output.classList.remove(cl);
 }
 // #endregion funzioni da richiamare dentro l'evento
 
@@ -30,8 +24,8 @@ function classRemove() {
 formElement.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // rimozione o toggle classe per mostrare la regione output
-    classRemove();
+    // richiamo funzione remove
+    classRemove('d-none');
 
     // dichiarazione variabili di valore input
     const inputName = userName.value;
@@ -54,12 +48,10 @@ formElement.addEventListener('submit', (e) => {
         document.getElementById('out-offer').innerHTML = 'Biglietto standard';
     }
 
-    // richiama le funzioni random
-    randomSeat();
-    randomId();
-
-    // stampa nell'output
+    // richiami funzione random e stampa nell'output
     document.getElementById('out-name').innerHTML = inputName;
+    document.getElementById('out-random-1').innerHTML = randomNum(1, 21);
+    document.getElementById('out-random-2').innerHTML = randomNum(11111, 99999);
     document.getElementById('out-price').innerHTML = `${basePrice.toFixed(2)}€`;
 })
 // #endregion evento per premuta tasto

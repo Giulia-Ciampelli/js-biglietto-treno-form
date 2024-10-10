@@ -16,7 +16,9 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    font-family: "Roboto", sans-serif;
     background-color: var(--background-colour);
+    color: var(--font-colour);
 }
 /* #endregion common */
 
@@ -26,10 +28,6 @@ body {
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
     margin: 10% 0;
     padding: 2rem;
     border-radius: 1rem;
@@ -37,9 +35,36 @@ body {
     background-color: var(--container-colour);
 }
 
-/* classe toggle per output */
+/* #region classi dinamiche */
 .d-none {
     display: none !important;
 }
+/* #endregion classi dinamiche */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.btn {
+    padding: .5rem;
+    border: 1px solid var(--font-colour);
+    border-radius: .5rem;
+    background-color: var(--background-colour);
+}
 /* #endregion inputs */

@@ -23,7 +23,7 @@ body {
 /* #endregion common */
 
 /* #region inputs */
-h1, p {
+h1 {
     text-align: center;
 }
 
@@ -47,8 +47,15 @@ h1, p {
 .d-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-content: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
 }
 
 .col-4 {
@@ -62,7 +69,6 @@ h1, p {
     width: calc((100% / 12) * 2);
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .mt-1 {
